@@ -10,7 +10,9 @@ lastname,firstname,surname,organization,position,phone,email
 2.	привести все телефоны в формат +7(999)999-99-99. Если есть добавочный номер, формат будет такой: +7(999)999-99-99 доб.9999;
 3.	объединить все дублирующиеся записи о человеке в одну.
 from pprint import pprint
-# читаем адресную книгу в формате CSV в список contacts_list
+
+читаем адресную книгу в формате CSV в список contacts_list
+
 import csv
 with open("phonebook_raw.csv") as f:
   rows = csv.reader(f, delimiter=",")
@@ -24,7 +26,9 @@ TODO 2: сохраните получившиеся данные в другой
 код для записи файла в формате CSV
 with open("phonebook.csv", "w") as f:
   datawriter = csv.writer(f, delimiter=',')
-  # Вместо contacts_list подставьте свой список
+  
+  Вместо contacts_list подставьте свой список
+  
   datawriter.writerows(contacts_list)
 ________________________________________
 Домашнее задание сдается ссылкой на репозиторий BitBucket или GitHub
