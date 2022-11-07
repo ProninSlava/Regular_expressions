@@ -17,11 +17,11 @@ with open("phonebook_raw.csv") as f:
   contacts_list = list(rows)
 pprint(contacts_list)
 
-# TODO 1: выполните пункты 1-3 ДЗ
-# ваш код
+TODO 1: выполните пункты 1-3 ДЗ
+ваш код
 
-# TODO 2: сохраните получившиеся данные в другой файл
-# код для записи файла в формате CSV
+TODO 2: сохраните получившиеся данные в другой файл
+код для записи файла в формате CSV
 with open("phonebook.csv", "w") as f:
   datawriter = csv.writer(f, delimiter=',')
   # Вместо contacts_list подставьте свой список
